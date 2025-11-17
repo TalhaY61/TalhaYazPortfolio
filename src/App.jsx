@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 
 import Home from "./pages/Home.jsx";
 import Education from "./pages/Education.jsx";
@@ -10,12 +10,9 @@ import Contact from "./pages/Contact.jsx";
 import Footer from "./components/Footer";
 
 // Wrapper to use useLocation inside Router
-function AppContent() {
+export default function App() {
   const location = useLocation();
-
-  // Pages WITHOUT footer
   const hideFooter = location.pathname === "/contact";
-
   return (
     <div
       className="min-h-screen flex flex-col"
@@ -34,13 +31,5 @@ function AppContent() {
 
       {!hideFooter && <Footer />}
     </div>
-  );
-}
-
-export default function App() {
-  return (
-    <Router>
-      <AppContent />
-    </Router>
   );
 }
