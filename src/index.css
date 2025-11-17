@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+:root {
+  --bg-dark: #0F0E0E;
+  --accent-red: #541212;
+  --accent-teal: #468A9A;
+  --text-light: #EEEEEE;
+}
+
+body {
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+}
+
+#root {
+  min-height: 100vh;
+  background-color: var(--bg-dark);
+}
