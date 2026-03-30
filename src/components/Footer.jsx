@@ -1,7 +1,7 @@
 import { FaGithub, FaLinkedin, FaInstagram, FaTwitter } from "react-icons/fa";
 import { SiItchdotio } from "react-icons/si";
 
-const CV_URL = "/cv/Talha-Yaz-CV.pdf";
+const CV_URL = `${import.meta.env.BASE_URL}cv/Talha-Yaz-CV.pdf`;
 
 export default function Footer({}) {
   return (

@@ -1,6 +1,6 @@
 import NavbarItem from "../components/NavbarItem";
 
-const CV_URL = "/cv/Talha-Yaz-CV.pdf";
+const CV_URL = `${import.meta.env.BASE_URL}cv/Talha-Yaz-CV.pdf`;
 
 export default function Home() {
   return (
