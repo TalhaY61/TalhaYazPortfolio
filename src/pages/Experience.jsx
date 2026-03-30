@@ -14,6 +14,21 @@ export default function Experience() {
 
       {/* Experience Timeline */}
       <TimelineItem
+        year="Feb 2026 – Present"
+        title="Working Student Software Developer"
+        company="BorgWarner"
+        description="Contributing to internal software solutions in an agile scrum environment, with a current focus on Python development and desktop tooling."
+        technologies={[
+          "Python", "PySide6", "Bitbucket", "Agile Scrum", "Git", "GUI Development"
+        ]}
+        achievements={[
+          "Developing a desktop GUI application with Python and PySide6 for internal workflows.",
+          "Collaborating with team members through sprint planning, daily stand-ups, and iterative delivery.",
+          "Maintaining code quality and version control practices using Bitbucket and pull request workflows.",
+        ]}
+      />
+
+      <TimelineItem
         year="Dec 2024 – Aug 2025"
         title="Junior Software Developer"
         company="Noxart Games"

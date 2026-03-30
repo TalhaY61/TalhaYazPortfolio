@@ -1,6 +1,8 @@
 import { FaGithub, FaLinkedin, FaInstagram, FaTwitter } from "react-icons/fa";
 import { SiItchdotio } from "react-icons/si";
 
+const CV_URL = "/cv/Talha-Yaz-CV.pdf";
+
 export default function Footer({}) {
   return (
     <footer
@@ -28,6 +30,18 @@ export default function Footer({}) {
       >
         talha-yaz@hotmail.de
       </a>
+
+      <div className="mt-4">
+        <a
+          href={CV_URL}
+          target="_blank"
+          rel="noreferrer"
+          className="text-base hover:underline"
+          style={{ color: "var(--accent-teal)" }}
+        >
+          View CV
+        </a>
+      </div>
 
       <div
         className="flex justify-center gap-6 text-2xl mt-8"

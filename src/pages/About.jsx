@@ -1,5 +1,7 @@
 import BackHome from "../components/BackHome";
 
+const CV_URL = "/cv/Talha-Yaz-CV.pdf";
+
 export default function About() {
   return (
     <div
@@ -17,6 +19,47 @@ export default function About() {
         </h1>
         <div className="w-14"></div>
       </div>
+
+      {/* CV */}
+      <section className="mb-12">
+        <h2
+          className="text-2xl font-bold mb-3"
+          style={{ color: "var(--accent-teal)" }}
+        >
+          CV
+        </h2>
+        <p
+          className="mb-5 leading-relaxed"
+          style={{ color: "rgba(238, 238, 238, 0.8)" }}
+        >
+          You can view my latest CV online or download it as a PDF.
+        </p>
+        <div className="flex flex-wrap gap-3">
+          <a
+            href={CV_URL}
+            target="_blank"
+            rel="noreferrer"
+            className="font-medium px-4 py-2 rounded-lg transition border-2"
+            style={{
+              borderColor: "var(--accent-teal)",
+              color: "var(--text-light)",
+            }}
+          >
+            View CV
+          </a>
+          <a
+            href={CV_URL}
+            download
+            className="font-medium px-4 py-2 rounded-lg transition border-2"
+            style={{
+              borderColor: "var(--accent-teal)",
+              color: "var(--text-light)",
+            }}
+          >
+            Download CV
+          </a>
+        </div>
+      </section>
 
       {/* Who I Am */}
       <section className="mb-14">

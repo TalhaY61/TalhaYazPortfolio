@@ -1,5 +1,6 @@
-import { NavLink } from "react-router-dom";
 import NavbarItem from "../components/NavbarItem";
+
+const CV_URL = "/cv/Talha-Yaz-CV.pdf";
 
 export default function Home() {
   return (
@@ -25,6 +26,14 @@ export default function Home() {
           <NavbarItem to="/education">Education</NavbarItem>
           <NavbarItem to="/about">About</NavbarItem>
           <NavbarItem to="/contact">Contact</NavbarItem>
+          <a
+            href={CV_URL}
+            target="_blank"
+            rel="noreferrer"
+            className="font-medium px-4 py-2 rounded-lg transition border-2 border-[var(--accent-teal)] text-[var(--text-light)] hover:bg-[var(--accent-teal)] hover:text-[var(--bg-dark)]"
+          >
+            CV
+          </a>
         </nav>
       </section>
 
